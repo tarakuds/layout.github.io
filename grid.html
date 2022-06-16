@@ -5,22 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        
+        .item1{
+            grid-area: purpleBox;
+            background-color:purple;
+            /* width: 35%;
+            height: 40vh; */
+        }
+        .item2{
+            grid-area: greyBox;
+            background-color: rgb(112, 108, 108);
+            /* width: 35%;
+            height: 40vh; */
+        }
+        .item3{
+            grid-area: orangeBox;
+            background-color: orange;
+            /* width: 35%;
+            height: 40vh;         */
+        }
+        .item4{
+            grid-area: blueBox;
+            background-color: blue; 
+            /* width: 35%;
+            height: 20vh;         */
+        }
+        .item5{
+            grid-area: greenBox;
+            background-color: blue;
+            /* width: 35%;
+            height: 20vh; */
+        ;
+    }
+
         .grid-container{
             display: grid;
             background-color: rgb(30, 32, 65);
             width: 90%;
             height:80vh;
+            grid-template-areas: 
+                'purpleBox purpleBox purpleBox greyBox greyBox'
+                'purpleBox purpleBox purpleBox greyBox greyBox'
+                'orangeBox orangeBox blueBox blueBox blueBox'
+                'orangeBox orangeBox greenBox greenBox greenBox';
+            gap: 10px;
+            padding: 3% 7% 5% 3%;
         }
+/* 
+        .grid-item{
+            background-color: #fff;
+            width:50px;
+            height: 50px;
+        } */
     </style>
     <title>Grid Layout</title>
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
     </div>
 </body>
 </html>
