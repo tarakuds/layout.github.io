@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+    *{
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+    }
+    .flex-container{
+        width:80%;
+        height:80vh;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 95%);
+        margin: 5%;
+        padding: 0 5%;
+    }
+
+    .flex-box{
+        width: 250px;
+        height: 400px;
+        box-shadow: #000;
+        padding: 3% 4%;
+    }
+
+    .flex-box span{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(18, 18, 18);
+        border-radius: 50%;
+        opacity: 0.2;
+    }
+
+    i{
+        font-size: 25px;
+        position: relative;
+        left: 5%;
+    }
+
+    .flex-box h3{
+        font-size: 25px;
+        color: hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display', cursive;
+    }
+
+    .flex-box p{
+        line-height: 20px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .flex-box:first-of-type{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: hsl(31, 77%, 52%);
+    }
+
+    .flex-box:last-of-type{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: hsl(179, 100%, 13%); 
+    }
+
+    button{
+        background-color: hsl(0, 0%, 95%);
+        border: 1px solid #fff;
+        border-radius: 25px;
+        width: 120px;
+        padding: 10px 7px;
+        margin-top:20%;
+        
+    }
+
+    button:hover{
+        border: 2px solid hsl(0, 0%, 95%);
+        background-color: none;
+    }
+    .margin-top{
+        margin-top:12%;
+    }
+
+    .arrow{
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #000;
+        text-align: center;
+        padding: 10px;
+    }
+
+    @media (max-width="375px") {
+        
+    }
+    @media (max-width="1440px") {
+        
+    }
+</style>
+
+    <title>Flexbox Layout</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-box">
+            <!-- <span><i class="fa-solid fa-car-side"></i></span> -->
+            <img src="images/icon-sedans.svg" alt="Sedans images">
+
+            <h3 class="margin-top">SEDANS</h3>
+
+            <p class="margin-top">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+
+            <button style="color:hsl(31, 77%, 52%)">Learn More</button>
+
+
+        </div>
+        <div class="flex-box" style="background-color: hsl(184, 100%, 22%)">
+            <!-- <span><i class="fa-solid fa-truck-monster"></i></span> -->
+
+            <img src="images/icon-suvs.svg" alt="SUV Images">
+
+            <h3 class="margin-top">SUVS</h3>
+
+            <p class="margin-top">Take an SUV for its spacious interior, power and versatility.  Perfect for your next family vacation and off-road adventures.</p>
+
+            <button style="color:hsl(184, 100%, 22%); ">Learn More</button>
+
+        </div>
+        <div class="flex-box">
+            <!-- <span><i class="fa-solid fa-truck"></i></span> -->
+            <img src="images/icon-luxury.svg" alt="luxury image">
+
+            <h3 class="margin-top">LUXURY</h3>
+
+            <p class="margin-top">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arive in style.</p>
+
+            <button style="color:hsl(179, 100%, 13%); ">Learn More</button>
+
+        </div>
+    </div>
+
+    <div class="arrow">
+        <p><a href="/grid.html"><i class="fa-solid fa-arrow-right"></i></a></p>
+        <p>Link to Grid File</p>
+
+    </div>
+</body>
+</html>
